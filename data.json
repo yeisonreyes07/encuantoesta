@@ -1,0 +1,44 @@
+{
+  "results": [
+    {
+      "gender": "female",
+      "name": { "title": "Ms", "first": "Louise", "last": "Brown" },
+      "location": {
+        "street": { "number": 6015, "name": "Paddock Way" },
+        "city": "Great Falls",
+        "state": "South Carolina",
+        "country": "United States",
+        "postcode": 73174,
+        "coordinates": { "latitude": "83.0332", "longitude": "61.1212" },
+        "timezone": { "offset": "+4:30", "description": "Kabul" }
+      },
+      "email": "louise.brown@example.com",
+      "login": {
+        "uuid": "91da996c-bfd2-44fa-8458-6ced375bcfa8",
+        "username": "lazygorilla803",
+        "password": "franks",
+        "salt": "9Yks0Ncp",
+        "md5": "884ecb63e5be192b09afeb8b921ef226",
+        "sha1": "bf2df7ebb2906b14d04fe5ad2ea7de6b2a135095",
+        "sha256": "0194c746eaedb966c5bbb37b20a230f52953747db7490f4bd09b1f4cedff67e4"
+      },
+      "dob": { "date": "1994-05-01T15:52:54.194Z", "age": 27 },
+      "registered": { "date": "2016-07-31T19:10:07.662Z", "age": 5 },
+      "phone": "(437)-896-5601",
+      "cell": "(918)-266-8873",
+      "id": { "name": "SSN", "value": "179-42-8942" },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/21.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/21.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/21.jpg"
+      },
+      "nat": "US"
+    }
+  ],
+  "info": {
+    "seed": "cb9dbaca565d2491",
+    "results": 1,
+    "page": 1,
+    "version": "1.3"
+  }
+}
