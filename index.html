@@ -64,7 +64,7 @@
     <script>
 
        //var contenido = document.querySelector('#contenido')
-
+        
             function traer(){
                     fetch('https://s3.amazonaws.com/dolartoday/data.json')
                     .then(res => res.json() )
@@ -75,7 +75,9 @@
                     })
                     
             }
-
+            function eArabic(x){
+             return x.toLocaleString('en-US');
+            }
             function tabla(data) {
             
             contenido.innerHTML = ''
@@ -89,11 +91,11 @@
                 
                 <tr  class="row100 body">
                     <td><i class="fas fa-dollar-sign"></i> Dolar</td>
-                    <td>${ valor.USD.transferencia }</td>
-                    <td>${ valor.USD.transfer_cucuta }</td>
-                    <td>${ valor.USD.sicad2 }</td>
-                    <td>${ valor.USD.localbitcoin_ref}</td>
-                    <td>${ valor.USD.promedio_real} Bss</td>
+                    <td>${eArabic(valor.USD.transferencia) }</td>
+                    <td>${eArabic(valor.USD.transfer_cucuta) }</td>
+                    <td>${eArabic(valor.USD.sicad2)}</td>
+                    <td>${eArabic(valor.USD.localbitcoin_ref)}</td>
+                    <td>${eArabic(valor.USD.promedio_real)} Bss</td>
                 </tr>
                 
                 `
@@ -101,11 +103,11 @@
                 
                 <tr  class="row100 body">
                     <td><i class="fas fa-euro-sign"></i> Euro</td>
-                    <td>${ valor.EUR.transferencia }</td>
-                    <td>${ valor.EUR.transfer_cucuta }</td>
-                    <td>${ valor.EUR.sicad2 }</td>
-                    <td>${ valor.EUR.dolartoday}</td>
-                    <td>${ valor.EUR.promedio_real} Bss</td>
+                    <td>${eArabic(valor.EUR.transferencia) }</td>
+                    <td>${eArabic(valor.EUR.transfer_cucuta) }</td>
+                    <td>${eArabic(valor.EUR.sicad2 )}</td>
+                    <td>${eArabic(valor.EUR.dolartoday)}</td>
+                    <td>${eArabic(valor.EUR.promedio_real)} Bss</td>
                 </tr>
                 
                 `
@@ -139,13 +141,5 @@
         </script>
     <!--===============================================================================================-->
         <script src="js/main.js"></script>
-
-        <script type="text/javascript">
-
-            var d = new Date();
-            
-            document.write(d.getHours());
-            
-            </script>
 </body>
 </html>
