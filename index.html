@@ -20,6 +20,7 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="/js/datos.js"></script>
 <!--===============================================================================================-->
 </head>
 <body onload="traer()">
@@ -59,66 +60,15 @@
 						</table>
 					</div>
 				</div>
-
+                <div class="col-md-6">
+                    <label>Envia el promedio actual a tu whatsapp</label>
+                    <input type="number" id="numero_enviar" value="" placeholder="+58 555 55 55"><i class="fab fa-whatsapp"></i></input>
+                        <button class="botton-whatsapp" type="button" onclick="enviar()">  
+                            <a target="_blank" id="whatsapp" href="" >Enviar por whatsapp</a>
+                        </button>                   
+                </div>
    
-    <script>
-
-       //var contenido = document.querySelector('#contenido')
-        
-            function traer(){
-                    fetch('https://s3.amazonaws.com/dolartoday/data.json')
-                    .then(res => res.json() )
-                    .then(data => {
-                        //console.log(data)
-                        tabla(data)
-                        //console.log(data.USD.promedio)
-                    })
-                    
-            }
-            function eArabic(x){
-             return x.toLocaleString('en-US');
-            }
-            function tabla(data) {
-            
-            contenido.innerHTML = ''
-            if(data => valor){
-               var valor = data;
-               hora.innerHTML = `
-               <p>${ valor._timestamp.fecha}</p>
-               
-               `
-                contenido.innerHTML = `
-                
-                <tr  class="row100 body">
-                    <td><i class="fas fa-dollar-sign"></i> Dolar</td>
-                    <td>${eArabic(valor.USD.transferencia) }</td>
-                    <td>${eArabic(valor.USD.transfer_cucuta) }</td>
-                    <td>${eArabic(valor.USD.sicad2)}</td>
-                    <td>${eArabic(valor.USD.localbitcoin_ref)}</td>
-                    <td>${eArabic(valor.USD.promedio_real)} Bss</td>
-                </tr>
-                
-                `
-                contenido_eur.innerHTML = `
-                
-                <tr  class="row100 body">
-                    <td><i class="fas fa-euro-sign"></i> Euro</td>
-                    <td>${eArabic(valor.EUR.transferencia) }</td>
-                    <td>${eArabic(valor.EUR.transfer_cucuta) }</td>
-                    <td>${eArabic(valor.EUR.sicad2 )}</td>
-                    <td>${eArabic(valor.EUR.dolartoday)}</td>
-                    <td>${eArabic(valor.EUR.promedio_real)} Bss</td>
-                </tr>
-                
-                `
-            }
-        }
-
-
-
-
-
-    </script>
+    
     <!--===============================================================================================-->	
 	    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
     <!--===============================================================================================-->

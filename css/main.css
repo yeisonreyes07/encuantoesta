@@ -537,3 +537,29 @@ tr.row100.head th {
   padding: 16px 0px !important;
   width: 14%;
 }
+input#numero_enviar {
+  border: #6c7ae0 solid 2px !important;
+  padding: 6px 20px;
+  border-radius: 6px;
+}
+
+/***********************/
+
+input#numero_enviar {
+  float: left;
+
+  /* padding: 10px; */
+}
+
+button.botton-whatsapp {
+  padding: 7.5px 12px;
+  background-color: #6c7ae0;
+  margin: 0px 2%;
+  border-radius: 5px;
+  color: white !important;
+}
+button.botton-whatsapp a {
+  color: white;
+  font-weight: 500;
+  font-family: 'Lato-Regular';
+}
