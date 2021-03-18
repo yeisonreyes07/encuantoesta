@@ -539,7 +539,7 @@ tr.row100.head th {
 }
 input#numero_enviar {
   border: #6c7ae0 solid 2px !important;
-  padding: 6px 20px;
+  padding: 6px 4px;
   border-radius: 6px;
 }
 
