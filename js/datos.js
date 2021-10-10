@@ -32,7 +32,7 @@ contenido.innerHTML = `
     <td>${eArabic(valor.USD.transfer_cucuta) }</td>
     <td>${eArabic(valor.USD.sicad2)}</td>
     <td>${eArabic(valor.USD.localbitcoin_ref)}</td>
-    <td>${eArabic(valor.USD.promedio_real)} Bss</td>
+    <td>${eArabic(valor.USD.promedio_real)} Bs</td>
 </tr>
 
 `
@@ -44,7 +44,7 @@ contenido_eur.innerHTML = `
     <td>${eArabic(valor.EUR.transfer_cucuta) }</td>
     <td>${eArabic(valor.EUR.sicad2 )}</td>
     <td>${eArabic(valor.EUR.dolartoday)}</td>
-    <td>${eArabic(valor.EUR.promedio_real)} Bss</td>
+    <td>${eArabic(valor.EUR.promedio_real)} Bs</td>
 </tr>
 
 `
